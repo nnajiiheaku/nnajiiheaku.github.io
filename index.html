@@ -3,50 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nnaji Iheaku — cybersecurity portfolio featuring SOC, SIEM, network security, and security engineering projects." />
-  <title>Nnaji Iheaku — Cybersecurity Portfolio</title>
+  <meta name="description" content="Nnaji J. Iheaku cybersecurity portfolio featuring SOC, SIEM, network security, and security engineering projects." />
+  <title>Nnaji J. Iheaku | Cybersecurity Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="noise"></div>
+  <div class="noise" aria-hidden="true"></div>
+
   <header class="header">
     <a class="logo" href="#top">NJI<span>.</span></a>
-    <nav id="nav">
+
+    <nav id="nav" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button id="menu" aria-label="Toggle menu">Menu</button>
+
+    <button id="menu" type="button" aria-label="Toggle navigation">Menu</button>
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-index">01 / PORTFOLIO</div>
+
       <div class="hero-grid">
-        <div>
+        <div class="hero-copy-wrap">
           <p class="kicker">CYBERSECURITY • SOC • SECURITY ENGINEERING</p>
-          <h1>Nnaji<br><span>Iheaku.</span></h1>
+          <h1>Nnaji J.<br><span>Iheaku.</span></h1>
+
           <p class="hero-copy">
             I build security labs, investigate telemetry, configure defensive controls,
             and document what I learn along the way.
           </p>
+
           <div class="hero-actions">
             <a class="btn light" href="#projects">Explore my work <span>↘</span></a>
-            <a class="btn ghost" href="https://github.com/nnajiiheaku" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a class="btn ghost" href="#resume">View resume <span>↘</span></a>
           </div>
         </div>
 
-        <div class="identity-card">
-          <div class="avatar-orbit">
+        <aside class="identity-card">
+          <div class="avatar-orbit" aria-hidden="true">
             <div class="orbit orbit-one"></div>
             <div class="orbit orbit-two"></div>
             <div class="avatar">NI</div>
           </div>
+
           <div class="identity-bottom">
             <div>
               <span>Current focus</span>
@@ -54,158 +65,336 @@
             </div>
             <div class="availability"><i></i> Building & learning</div>
           </div>
-        </div>
+        </aside>
       </div>
 
       <div class="scroll-cue"><span></span> Scroll to explore</div>
     </section>
 
+    <!-- TOOL TICKER -->
     <section class="ticker" aria-label="Tools and focus areas">
       <div class="ticker-track">
-        <span>WAZUH</span><b>✦</b><span>SPLUNK</span><b>✦</b><span>PFSENSE</span><b>✦</b><span>KALI LINUX</span><b>✦</b><span>WINDOWS</span><b>✦</b><span>WIRESHARK</span><b>✦</b><span>THREAT DETECTION</span><b>✦</b><span>NETWORK SECURITY</span><b>✦</b>
-        <span>WAZUH</span><b>✦</b><span>SPLUNK</span><b>✦</b><span>PFSENSE</span><b>✦</b><span>KALI LINUX</span><b>✦</b><span>WINDOWS</span><b>✦</b><span>WIRESHARK</span><b>✦</b><span>THREAT DETECTION</span><b>✦</b><span>NETWORK SECURITY</span><b>✦</b>
+        <span>WAZUH</span><b>✦</b><span>SPLUNK</span><b>✦</b><span>KALI LINUX</span><b>✦</b><span>WINDOWS</span><b>✦</b><span>SYSMON</span><b>✦</b><span>NMAP</span><b>✦</b><span>THREAT DETECTION</span><b>✦</b><span>NETWORK SECURITY</span><b>✦</b>
+        <span>WAZUH</span><b>✦</b><span>SPLUNK</span><b>✦</b><span>KALI LINUX</span><b>✦</b><span>WINDOWS</span><b>✦</b><span>SYSMON</span><b>✦</b><span>NMAP</span><b>✦</b><span>THREAT DETECTION</span><b>✦</b><span>NETWORK SECURITY</span><b>✦</b>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section about">
       <div class="section-label">02 / ABOUT</div>
+
       <div class="section-grid">
         <div class="section-title-wrap">
           <p class="kicker">HOW I GOT HERE</p>
           <h2>Learning security by <span>building it.</span></h2>
         </div>
-        <div class="about-copy">
-          <p class="lead">I’m a Management Information Systems student at The University of Alabama focused on cybersecurity and security engineering.</p>
-          <p>Most of my hands-on work starts with a simple question: <em>what actually happens under the hood?</em> I use virtual labs to build segmented networks, collect logs, test controls, generate security events, troubleshoot what breaks, and validate what the tools can really detect.</p>
-          <p>That approach has helped me connect networking, endpoint security, SIEM, system administration, and incident investigation into one practical workflow.</p>
 
-          <div class="stats">
-            <div><strong>2</strong><span>Security projects</span></div>
-            <div><strong>3</strong><span>Segmented lab networks</span></div>
-            <div><strong>350+</strong><span>Endpoints monitored in internship work</span></div>
+        <div class="about-copy reveal">
+          <p class="lead">
+            I’m a Management Information Systems student at The University of Alabama
+            focused on cybersecurity and security engineering.
+          </p>
+
+          <p>
+            Most of my hands-on work starts with a simple question:
+            <em>what actually happens under the hood?</em>
+            I use virtual labs to build segmented networks, collect logs, test controls,
+            generate security events, troubleshoot what breaks, and validate what the
+            tools can really detect.
+          </p>
+
+          <p>
+            That approach has helped me connect networking, endpoint security, SIEM,
+            system administration, and incident investigation into one practical workflow.
+          </p>
+
+          <div class="stats reveal">
+            <div>
+              <strong>2</strong>
+              <span>Security projects</span>
+            </div>
+            <div>
+              <strong>10+</strong>
+              <span>Security tools & platforms used</span>
+            </div>
+            <div>
+              <strong>450+</strong>
+              <span>Endpoints monitored in professional work</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience" class="section experience">
       <div class="section-label">03 / EXPERIENCE</div>
+
       <div class="section-head">
         <p class="kicker">WHERE I’VE WORKED</p>
         <h2>Hands-on experience<br><span>beyond the lab.</span></h2>
       </div>
 
-      <article class="experience-row">
+      <article class="experience-row reveal">
         <div class="exp-number">01</div>
-        <div class="exp-time">IT Internship<br><span>Atlanta, GA</span></div>
+        <div class="exp-time">June 2025 - Present<br><span>Atlanta, GA</span></div>
+
         <div class="exp-main">
           <h3>Core12</h3>
-          <p>Worked across endpoint protection, email security, application allowlisting, technical support, infrastructure upgrades, and security-focused troubleshooting.</p>
+          <p class="role">Level 1 Technician</p>
+          <p>
+            Work across endpoint protection, email security, application allowlisting,
+            technical support, infrastructure upgrades, and security-focused troubleshooting.
+          </p>
+
           <ul>
-            <li>Monitored endpoint threats across 350+ managed endpoints using Huntress and SentinelOne.</li>
-            <li>Reviewed spam, phishing, and malicious email activity with Barracuda Email Security.</li>
-            <li>Implemented ThreatLocker controls to support application allowlisting and Zero Trust principles.</li>
-            <li>Resolved technical and security support issues while contributing to infrastructure and network improvements.</li>
+            <li>Resolve 10+ technical and security support tickets daily.</li>
+            <li>Monitor endpoint threats across 450+ managed endpoints using Huntress and SentinelOne EDR.</li>
+            <li>Implement ThreatLocker controls for application allowlisting, endpoint protection, and Zero Trust security.</li>
+            <li>Review spam, phishing, and malicious email events using Barracuda Email Security.</li>
           </ul>
-          <div class="tag-row"><span>SentinelOne</span><span>Huntress</span><span>ThreatLocker</span><span>Barracuda</span><span>ConnectWise</span></div>
+
+          <div class="tag-row">
+            <span>SentinelOne</span>
+            <span>Huntress</span>
+            <span>ThreatLocker</span>
+            <span>Barracuda</span>
+          </div>
         </div>
       </article>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section projects">
       <div class="section-label">04 / PROJECTS</div>
+
       <div class="section-head projects-head">
         <div>
           <p class="kicker">SELECTED WORK</p>
           <h2>From network setup<br><span>to detection.</span></h2>
         </div>
-        <p>Projects where I can explain the architecture, the configuration, what failed, how I troubleshot it, and what the final result proved.</p>
+
+        <p>
+          Projects where I can explain the configuration, what failed, how I troubleshot
+          it, and what the final result proved.
+        </p>
       </div>
 
-      <article class="project project-primary">
-        <div class="project-topline"><span>01 / FLAGSHIP PROJECT</span><span>SOC • SIEM • NETWORKING</span></div>
+      <article class="project project-primary reveal">
+        <div class="project-topline">
+          <span>01 / FEATURED PROJECT</span>
+          <span>SOC • SIEM • DETECTION</span>
+        </div>
+
         <div class="project-grid">
           <div>
             <h3>SOC Homelab</h3>
-            <p class="project-summary">A segmented virtual SOC environment built to practice defensive monitoring, log analysis, firewall policy, endpoint telemetry, and realistic detection validation.</p>
-            <a class="project-link" href="https://github.com/nnajiiheaku/soc-homelab" target="_blank" rel="noreferrer">View full repository <span>↗</span></a>
+            <p class="project-summary">
+              A segmented virtual SOC environment built to practice defensive monitoring,
+              log analysis, firewall policy, endpoint telemetry, and realistic detection validation.
+            </p>
+
+            <a class="project-link" href="https://github.com/nnajiiheaku/soc-homelab" target="_blank" rel="noreferrer">
+              View full repository <span>↗</span>
+            </a>
           </div>
 
           <div class="project-console">
-            <div class="console-bar"><i></i><i></i><i></i><span>soc-architecture.txt</span></div>
-            <pre>Internet
-   │
- pfSense
-   │
- ├── SOC Network      192.168.10.0/24
- │    └─ Wazuh + Splunk
- │
- ├── Victim Network   192.168.20.0/24
- │    └─ Windows 11 + Sysmon
- │
- └── Attacker Network 192.168.30.0/24
-      └─ Kali Linux</pre>
+            <div class="console-bar">
+              <i></i><i></i><i></i><span>soc-environment.txt</span>
+            </div>
+            <pre>SOC Environment
+│
+├── Ubuntu Server
+│   ├── Wazuh
+│   └── Splunk
+│
+├── Windows 11
+│   └── Sysmon
+│
+└── Kali Linux
+    └── Attack simulation</pre>
           </div>
         </div>
 
         <div class="project-details">
-          <div><span>01</span><h4>Architecture</h4><p>Built three segmented networks behind pfSense to separate SOC, victim, and attacker systems.</p></div>
-          <div><span>02</span><h4>Telemetry</h4><p>Connected Windows and Kali endpoints to Wazuh and added Sysmon, audit logging, and Splunk ingestion.</p></div>
-          <div><span>03</span><h4>Validation</h4><p>Generated failed logins, PowerShell activity, account creation, and other events to confirm detection visibility.</p></div>
-          <div><span>04</span><h4>Troubleshooting</h4><p>Resolved routing, firewall, storage, agent, and log collection issues throughout the build.</p></div>
+          <div>
+            <span>01</span>
+            <h4>Segmentation</h4>
+            <p>Separated SOC, victim, and attacker systems to simulate an enterprise lab environment.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h4>Telemetry</h4>
+            <p>Collected Windows and Linux telemetry with Wazuh, Splunk, Sysmon, and audit logging.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h4>Validation</h4>
+            <p>Generated failed logins, Nmap scans, PowerShell activity, and other events to validate visibility.</p>
+          </div>
+          <div>
+            <span>04</span>
+            <h4>Troubleshooting</h4>
+            <p>Resolved routing, firewall, storage, agent, and log collection issues throughout the build.</p>
+          </div>
         </div>
 
-        <div class="tag-row"><span>Wazuh</span><span>Splunk</span><span>pfSense</span><span>Kali Linux</span><span>Windows 11</span><span>Ubuntu Server</span><span>Sysmon</span></div>
+        <div class="tag-row">
+          <span>Wazuh</span>
+          <span>Splunk</span>
+          <span>Kali Linux</span>
+          <span>Windows 11</span>
+          <span>Ubuntu Server</span>
+          <span>Sysmon</span>
+        </div>
       </article>
 
-      <article class="project project-secondary">
-        <div class="project-topline"><span>02 / NETWORK SECURITY</span><span>FIREWALL • SEGMENTATION • TRAFFIC</span></div>
-        <div class="project-grid compact">
+      <article class="project project-secondary reveal">
+        <div class="project-topline">
+          <span>02 / NETWORK SECURITY</span>
+          <span>ROUTING • ACLs • DHCP/DNS</span>
+        </div>
+
+        <div class="project-grid compact single">
           <div>
             <h3>Network Security Project</h3>
-            <p class="project-summary">Hands-on work centered on segmentation, connectivity, firewall behavior, traffic flow, and documenting how defensive network controls affect communication between systems.</p>
-            <a class="project-link" href="https://github.com/nnajiiheaku/network-security-project" target="_blank" rel="noreferrer">View full repository <span>↗</span></a>
-          </div>
-          <div class="network-visual">
-            <div class="node large">Firewall</div>
-            <div class="connections"><span></span><span></span><span></span></div>
-            <div class="nodes"><div class="node">SOC</div><div class="node">Victim</div><div class="node">Attacker</div></div>
+            <p class="project-summary">
+              A network security and infrastructure project focused on subnetting, routing,
+              DHCP/DNS, firewall controls, and validating network behavior in Packet Tracer.
+            </p>
+
+            <a class="project-link" href="https://github.com/nnajiiheaku/network-security-project" target="_blank" rel="noreferrer">
+              View full repository <span>↗</span>
+            </a>
           </div>
         </div>
-        <div class="tag-row"><span>pfSense</span><span>Wireshark</span><span>TCP/IP</span><span>Firewall Rules</span><span>Network Segmentation</span></div>
+
+        <div class="project-details project-details-three">
+          <div>
+            <span>01</span>
+            <h4>Subnetting</h4>
+            <p>Designed and implemented subnets across multiple LANs for scalable network segmentation.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h4>Network Services</h4>
+            <p>Configured DHCP and DNS to support dynamic addressing and name resolution.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h4>Security Controls</h4>
+            <p>Implemented ACL-based perimeter firewall controls and validated routing and authentication behavior.</p>
+          </div>
+        </div>
+
+        <div class="tag-row">
+          <span>Packet Tracer</span>
+          <span>ACLs</span>
+          <span>DHCP</span>
+          <span>DNS</span>
+          <span>Routing</span>
+          <span>Network Segmentation</span>
+        </div>
       </article>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="section skills">
       <div class="section-label">05 / SKILLS</div>
+
       <div class="section-head">
         <p class="kicker">TOOLS & TECHNOLOGIES</p>
         <h2>What I work with.</h2>
       </div>
+
       <div class="skill-list">
-        <div><span>01</span><h3>SIEM & Security</h3><p>Wazuh · Splunk · SentinelOne · Huntress · ThreatLocker · Barracuda Email Security</p></div>
-        <div><span>02</span><h3>Networking</h3><p>pfSense · Wireshark · TCP/IP · Firewall Rules · Routing · Network Segmentation</p></div>
-        <div><span>03</span><h3>Systems & Logging</h3><p>Windows · Kali Linux · Ubuntu Server · VirtualBox · Sysmon · auditd</p></div>
-        <div><span>04</span><h3>Development</h3><p>Python · PowerShell · SQL · C# · Git · GitHub</p></div>
+        <div class="reveal">
+          <span>01</span>
+          <h3>SIEM & Security</h3>
+          <p>Wazuh · Splunk Enterprise · SentinelOne · Huntress · ThreatLocker · Barracuda Email Security</p>
+        </div>
+
+        <div class="reveal">
+          <span>02</span>
+          <h3>Networking</h3>
+          <p>TCP/IP · ACLs · Routing · DHCP · DNS · Network Segmentation · Packet Tracer</p>
+        </div>
+
+        <div class="reveal">
+          <span>03</span>
+          <h3>Systems & Logging</h3>
+          <p>Windows · Kali Linux · Ubuntu · VirtualBox · Sysmon · Linux auditd</p>
+        </div>
+
+        <div class="reveal">
+          <span>04</span>
+          <h3>Development</h3>
+          <p>Python · C# · JavaScript · SQL · HTML/CSS · Git · GitHub</p>
+        </div>
       </div>
     </section>
 
+    <!-- RESUME -->
+    <section id="resume" class="section resume">
+      <div class="section-label">06 / RESUME</div>
+
+      <div class="resume-grid">
+        <div class="resume-copy">
+          <p class="kicker">MY RESUME</p>
+          <h2>Experience, education<br><span>and projects.</span></h2>
+
+          <p>
+            View my current resume directly on the site, open it in a new tab,
+            or download a copy.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn light" href="resume.pdf" target="_blank" rel="noreferrer">Open resume <span>↗</span></a>
+            <a class="btn ghost" href="resume.pdf" download>Download PDF <span>↓</span></a>
+          </div>
+        </div>
+
+        <div class="resume-frame reveal">
+          <object data="resume.pdf#view=FitH" type="application/pdf" aria-label="Nnaji J. Iheaku resume">
+            <p>
+              Your browser cannot display the PDF preview.
+              <a href="resume.pdf" target="_blank" rel="noreferrer">Open the resume here.</a>
+            </p>
+          </object>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="contact">
-      <div class="section-label">06 / CONTACT</div>
+      <div class="section-label">07 / CONTACT</div>
+
       <div class="contact-inner">
         <p class="kicker">LET’S CONNECT</p>
         <h2>Interested in<br><span>working together?</span></h2>
-        <p>I’m continuing to build toward opportunities in SOC, security analysis, and security engineering.</p>
+
+        <p>
+          I’m continuing to build toward opportunities in SOC, security analysis,
+          and security engineering.
+        </p>
+
         <a class="email" href="mailto:nnajiiheaku02@gmail.com">nnajiiheaku02@gmail.com ↗</a>
+
         <div class="contact-links">
           <a href="https://github.com/nnajiiheaku" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/nnaji-iheaku" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href="#top">Back to top ↑</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><span>© <span id="year"></span> Nnaji Iheaku</span><span>Built from scratch with HTML, CSS & JavaScript.</span></footer>
+  <footer>
+    <span>© <span id="year"></span> Nnaji J. Iheaku</span>
+    <span>Built with HTML, CSS & JavaScript.</span>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

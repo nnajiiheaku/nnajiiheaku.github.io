@@ -1,0 +1,98 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 2045 >>
+stream
+BT
+/F1 15 Tf
+54 750 Td
+(NNAJI J. IHEAKU) Tj
+0 -22 Td
+/F1 8 Tf
+(linkedin.com/in/nnaji-iheaku | github.com/nnajiiheaku | nnajiiheaku02@gmail.com) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(EDUCATION) Tj
+0 -16 Td
+(Master of Science in Management Information Systems, May 2027) Tj
+0 -16 Td
+(The University of Alabama, Manderson Graduate School of Business | GPA: 3.6/4.0) Tj
+0 -16 Td
+(Bachelor of Science in Management Information Systems, May 2027) Tj
+0 -16 Td
+(The University of Alabama, Culverhouse College of Business | GPA: 3.8/4.0) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(WORK EXPERIENCE) Tj
+0 -16 Td
+(Level 1 Technician | Core12, Atlanta, GA | June 2025 - Present) Tj
+0 -16 Td
+(- Resolved 10+ technical and security support tickets daily.) Tj
+0 -16 Td
+(- Monitored endpoint threats across 450+ managed endpoints using Huntress and SentinelOne EDR.) Tj
+0 -16 Td
+(- Implemented ThreatLocker for application allowlisting, endpoint protection, and Zero Trust controls.) Tj
+0 -16 Td
+(- Reviewed spam, phishing, and malicious email events using Barracuda Email Security.) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(PROJECT EXPERIENCE) Tj
+0 -16 Td
+(Security Operations Center Homelab | Personal Project | May 2026) Tj
+0 -16 Td
+(- Built a SOC homelab with Windows, Kali Linux, Ubuntu/Wazuh, Splunk, and segmented systems.) Tj
+0 -16 Td
+(- Centralized logs with Wazuh and Splunk; enhanced endpoint visibility with Sysmon and auditd.) Tj
+0 -16 Td
+(- Simulated failed logins, Nmap scans, and PowerShell execution to validate detections.) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Network Security & Infrastructure Project | Fall 2025) Tj
+0 -16 Td
+(- Designed subnets, configured DHCP/DNS, implemented ACL-based firewall controls, and validated routing.) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(LEADERSHIP) Tj
+0 -16 Td
+(Conference Planning Chair | National Society of Black Engineers | August 2025 - Present) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(TECHNICAL) Tj
+0 -16 Td
+(Python, C#, JavaScript, SQL, HTML/CSS | Windows, Kali Linux, Ubuntu) Tj
+0 -16 Td
+(Wazuh, Splunk Enterprise, Sysmon, Linux auditd, Wireshark, Nmap) Tj
+0 -16 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002337 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2407
+%%EOF
